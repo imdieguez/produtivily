@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    color: inherit
+}
+
+/* INICIO */
+.main-body-container {
+    background-color: #F8D3D2;
+    height: 100vh;
+}
+
+.main-title {
+    margin: 0 5%;
+}
+
+.main-title h1 {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.main-title p {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.task-bar-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.task-bar-content img {
+    width: 40%;
+}
+.task-bar-content h1 {
+    font-size: 5em;
+    width: 28%;
+}
+
+/* FILTER PAGE */
+.filter-body-container {
+    background-color: #9AF7B3;
+    height: 100vh;
+}
+
+.filter-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto 5%;
+    height: 90vh;
+}
+
+.filter-content img {
+    width: 40%;
+}
+
+.filter-text {
+    font-size: 2em;
+    width: 39%;
+}
+
+.filter-text h1 {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+
+.filter-text p {
+    font-size: 0.9em;
+}
+
+span {
+    font-weight: bold;
+}
+/* FOCUS */
+
+.focus-body-container {
+    background-color: #B7D4FB;
+    height: 100vh;
+}
+
+.focus-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    margin: 0 5%;
+}
+
+.focus-text {
+    width: 39%;
+}
+.focus-content img {
+    width: 30%;
+}
+
+.focus-text h1 {
+    font-size: 4em;
+    
+}
+
+.focus-text p {
+    font-size: 1.7em;
+    margin-top: 30px;
+}
+
+/* DO */
+.do-body-container {
+    background-color: #FCFA99;
+    height: 100vh;
+}
+
+.do-content h1 {
+    font-size: 4em;
+}
+
+.do-content {
+    padding-top: 20vh;
+    margin: 0 5%;
+    padding-left: 11vh;
+}
+
+.do-content p {
+    padding-top: 5vh;
+    font-size: 1.7em;
+}
+
+.do-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 20vh;
+}
+
+.do-images {
+width: 20%;
+}
+
+/* MEDIA DE RESPONSIVO */
+@media only screen and (max-width: 414px) {
+   
+   /* INICIO */
+    .task-bar-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-title h1 {
+        font-size: 4em;
+    }
+
+    .main-title p {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+
+    .task-bar-content h1 {
+        font-size: 2em;
+        width: 60%;
+    }
+
+    .task-bar-content img {
+        width: 80%;
+        margin-top: 10vh;
+    }
+
+    /* FILTER PAGE */
+    .filter-content {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .filter-text {
+        margin-top: 60px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .filter-text h1 {
+        font-size: 1.1em;
+    }
+
+    .filter-text p {
+        font-size: 0.56em;
+    }
+
+    .filter-content {
+    }
+
+    .filter-content img {
+        width: 80%;
+    }
+    
+    /* FOCUS */
+    .focus-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 5%;
+    }
+
+    .focus-text {
+    width: 90%;
+    text-align: left;
+    }
+
+    .focus-content img {
+    width: 70%;
+    margin-top: -40px;
+    }
+
+    .focus-text h1 {
+    font-size: 2.7em;
+    margin-top: -90px;
+    }
+
+    .focus-text p {
+    font-size: 1.3em;
+    margin-top: 22px;
+    }
+
+    /* DO */
+    .do-content {
+    margin: 0 5%;
+    padding-left: 11px;
+    text-align: left;
+    float: initial;
+    padding-top: 1px;
+    }
+    
+    .do-content h1 {
+    padding-top: 15vh;
+    font-size: 2.2em;
+    }
+
+    .do-content p {
+    padding-top: 5vh;
+    font-size: 1.2em;
+    }
+
+    .do-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    }
+    
+    .do-images {
+    width: 33%;
+    padding-top: 30px;
+    }
+}
